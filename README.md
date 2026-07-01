@@ -190,7 +190,8 @@ Load (+/–). _(Confirm terminal order against the icons before rewiring — �
 
 ### 2.5 Battery
 
-- Type / capacity: _To be recorded_ 📷 (e.g. 12 V lead-acid/AGM, ___ Ah).
+- Type / capacity: **Exide Marine & Leisure Dual AGM**, label shows **EP800 / 100**
+  (interpret as ~100 Ah class). 📷
 - Charged by: the ELX-20-240 converter (on shore power) **and** the solar controller.
 - Keep terminals clean and tight; check electrolyte level if a serviceable lead-acid type.
 
@@ -209,7 +210,8 @@ Quick colour reference for the DC side (per the converter label):
 
 ## 3. Water system
 
-> **Status:** 📷 _Photos needed._ Skeleton below — fill from photos + component labels.
+> **Status:** partial photos captured (city-water inlet + pump/plumbing), remaining label
+> details still needed.
 
 Likely layout (to confirm): a fresh-water tank feeds a **12 V pump**, which pressurises the
 taps and (if fitted) the water heater. Waste drains to a grey-water outlet.
@@ -219,10 +221,10 @@ taps and (if fitted) the water heater. Waste drains to a grey-water outlet.
 | Item | Detail | Source |
 |---|---|---|
 | Fresh tank capacity | _____ L | 📷 label / measure |
-| Fill point | Location: _____ | 📷 |
-| Water pump | Make/model, ___ V, ___ bar | 📷 pump label |
+| Fill point | Exterior sidewall fill cap present | `images/exterior-shore-power-inlet.jpg` |
+| Water pump | Shurflo pump present under cabinet (exact model unreadable in current photo) | `images/water-pump-and-plumbing.jpg` |
 | Pump fuse/switch | DC circuit #___ (see §2.3) | 📷 |
-| City-water inlet | Fitted? EU pressure reducer? | 📷 |
+| City-water inlet | **Fitted**, labelled `CITY WATER CONNECTION`; check for EU pressure reducer before use | `images/water-city-connection.jpg` |
 | Filter | Type/location | 📷 |
 
 ### 3.2 Water heater
@@ -300,22 +302,23 @@ An **absorption "3-way" fridge** running on **12 V DC**, **AC mains**, or **LPG 
 
 | Item | Detail | Source |
 |---|---|---|
-| Make / model | e.g. Dometic / Norcold ___ | 📷 data label |
-| 12 V rating | ___ V / ___ A | 📷 |
-| AC rating | **Original 120 V or converted 230 V?** ⚠️ | 📷 |
-| Gas rating | 30 mbar, consumption ___ g/h | 📷 |
-| Ventilation | Exterior vents clear? | 📷 |
+| Make / model | **Dometic RM 2193** (Type `CA0/110`) | `images/appliance-fridge-data-label-dometic-rm2193.jpg` |
+| 12 V rating | **12 V DC, 9.6 A** | `images/appliance-fridge-data-label-dometic-rm2193.jpg` |
+| AC rating | **110 V AC, 1.05 A** (US-spec) ⚠️ | `images/appliance-fridge-data-label-dometic-rm2193.jpg` |
+| Gas rating | Label shows **11" WC LP gas manifold pressure**; input listed 635 max / 293 min Btu/hour | `images/appliance-fridge-data-label-dometic-rm2193.jpg` |
+| Ventilation | Rear service vents/openings present | `images/appliance-fridge-rear-service-bay.jpg` |
 
-> ⚠️ **Critical EU-conversion question (your "120 V → 220 V converted??"):**
-> The AC heating element must match the supply. Two possibilities:
-> 1. The original **120 V element was replaced with a 230 V element** — correct for direct
->    hook-up. ✅
-> 2. The original **120 V element is retained** and fed via a **step-down transformer** from
->    240 V. ✅ (but only if such a transformer is actually fitted)
+> ⚠️ **Critical EU-conversion finding:**
+> Current photos and labels indicate a **120 V fridge installation**, not a confirmed built-in
+> 230 V conversion:
+> - fridge data label states **110 V AC**;
+> - fridge control panel is marked **120 V / 12 V**;
+> - owner report indicates a loose cord with US plug and no obvious fixed transformer.
 >
-> Running a **120 V element directly on 240 V is dangerous** (overheat / fire) and will
-> destroy the element. **Do not use the fridge on AC until this is confirmed.** Photograph
-> the element/label and any transformer so we can settle this.
+> Treat this fridge AC side as **US-voltage equipment** until proven otherwise. Do **not**
+> connect it directly to 230–240 V mains. Use either:
+> 1. a correctly sized **230→110 V step-down transformer** dedicated to the fridge AC feed, or
+> 2. a confirmed **230 V replacement heating element/conversion** installed by a qualified tech.
 
 **Operating notes (to finalise):**
 - **12 V** — highest current; typically only while driving / engine charging. Not for
@@ -329,12 +332,15 @@ The unit has a **Truma** system with a dedicated **controller/control panel**.
 
 | Item | Detail | Source |
 |---|---|---|
-| Truma appliance | e.g. Combi (air + water heat) / S-series heater / water heater | 📷 unit label |
-| Controller / panel | e.g. Truma **CP plus** / CP classic / rotary | 📷 panel |
+| Truma appliance | Truma unit body visible under cabinet; exact model label still needed | `images/appliance-truma-heater-unit.jpg` |
+| Controller / panel | **Trumatic E** rotary controller visible on interior panel | `images/appliance-truma-control-and-gas-alarm.jpg` |
 | Energy source | Gas / 230 V electric / mixed | 📷 |
 | 230 V electric rating | ___ W (if electric heating fitted) | 📷 |
 | Water capacity (if Combi/Therme) | ___ L | 📷 |
 | Flue / exhaust | Roof or wall cowl — must be clear | 📷 |
+
+Related safety device in same panel photo: **Safe-T-Alert propane gas alarm**, model `30-442`
+(12 VDC, 75 mA, 1 A fuse max).
 
 **To document once photographed:**
 - Control panel layout and what each button/dial does (heat level, hot-water temp, energy
@@ -398,6 +404,16 @@ in **[`TODO.md`](TODO.md)** to keep this manual clean.
 | `images/electrical-converter-dc-wiring-label.jpg` | ELX-20-240 converter — 12 V DC output wiring label | §2.3 |
 | `images/electrical-converter-wiring-harness.jpg` | Wiring harness, DC blower & crimp connectors | §2.3 |
 | `images/electrical-converter-panel.jpg` | ELX-20-240 Power Converter / distribution panel (open) | §2.2 |
+| `images/electrical-battery-exide-er900.jpg` | Exide AGM battery installation (EP800/100 marking visible) | §2.5 |
+| `images/appliance-fridge-data-label-dometic-rm2193.jpg` | Fridge data label (Dometic RM 2193, 110 V AC / 12 V DC) | §5.1 |
+| `images/appliance-fridge-controls-120v-12v-gas.jpg` | Fridge rear controls marked 120 V / 12 V / gas | §5.1 |
+| `images/appliance-fridge-rear-service-bay.jpg` | Fridge rear service bay, burner/chimney and ventilation openings | §5.1 |
+| `images/appliance-truma-heater-unit.jpg` | Truma heater unit under cabinet | §5.2 |
+| `images/appliance-truma-control-and-gas-alarm.jpg` | Trumatic E controller with Safe-T-Alert gas alarm | §5.2 / §4.3 |
+| `images/water-pump-and-plumbing.jpg` | Water pump and plumbing cluster | §3.1 |
+| `images/water-plumbing-and-routing.jpg` | Water-line routing under cabinet | §3.1 |
+| `images/water-city-connection.jpg` | Exterior city-water connection port | §3.1 |
+| `images/exterior-shore-power-inlet.jpg` | Exterior shore-power inlet location | §2.2 |
 
 ---
 
@@ -419,6 +435,38 @@ in **[`TODO.md`](TODO.md)** to keep this manual clean.
 
 ![ELX-20-240 power converter and breaker panel](images/electrical-converter-panel.jpg)
 
+**Dometic RM2193 fridge data label (110 V AC / 12 V DC)** — `images/appliance-fridge-data-label-dometic-rm2193.jpg`
+
+![Dometic RM2193 fridge label](images/appliance-fridge-data-label-dometic-rm2193.jpg)
+
+**Fridge rear controls (120 V / 12 V / gas)** — `images/appliance-fridge-controls-120v-12v-gas.jpg`
+
+![Fridge rear control panel](images/appliance-fridge-controls-120v-12v-gas.jpg)
+
+**Fridge rear service bay** — `images/appliance-fridge-rear-service-bay.jpg`
+
+![Fridge rear service bay](images/appliance-fridge-rear-service-bay.jpg)
+
+**Truma heater unit** — `images/appliance-truma-heater-unit.jpg`
+
+![Truma heater unit](images/appliance-truma-heater-unit.jpg)
+
+**Trumatic E controller + gas alarm** — `images/appliance-truma-control-and-gas-alarm.jpg`
+
+![Trumatic E and Safe-T-Alert gas alarm](images/appliance-truma-control-and-gas-alarm.jpg)
+
+**Water pump and plumbing** — `images/water-pump-and-plumbing.jpg`
+
+![Water pump and plumbing](images/water-pump-and-plumbing.jpg)
+
+**City-water inlet** — `images/water-city-connection.jpg`
+
+![City water connection](images/water-city-connection.jpg)
+
+**Battery install** — `images/electrical-battery-exide-er900.jpg`
+
+![Exide AGM battery](images/electrical-battery-exide-er900.jpg)
+
 ---
 
-_Last updated: 2026-07-01. Draft based on 4 electrical-bay photos; more sections pending additional photos._
+_Last updated: 2026-07-01. Updated with fridge/truma/water/battery photo set and revised fridge AC safety notes._

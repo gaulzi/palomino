@@ -10,9 +10,12 @@ filled in and the item below ticked off.
 
 ## ⚠️ Safety verifications (do before use)
 
-- [ ] **Refrigerator AC voltage** — confirm the AC heating element is **230 V**, *or* that a
-  **step-down transformer** feeds an original 120 V element. Do **not** use the fridge on AC
-  until confirmed. (README §5.1)
+- [x] **Refrigerator AC voltage identified** — photo evidence shows a **110/120 V** fridge
+  (Dometic RM2193 + 120 V control marking) with loose US-style AC lead at rear service bay.
+  README §5.1 updated with this finding.
+- [ ] **Refrigerator AC safe-use path** — confirm/install a dedicated **230→110 V
+  step-down transformer** (or a certified 230 V conversion) before using fridge on AC.
+  (README §5.1)
 - [ ] **Gas regulator** — confirm it is a **30 mbar EU** regulator and all appliances are
   jetted for 30 mbar. (README §4.1)
 - [ ] **Gas leak test** performed and documented; **gas + CO alarm** fitted/working. (§4.3)
@@ -24,9 +27,9 @@ filled in and the item below ticked off.
 ## 📷 Photo shot-list (priority order)
 
 ### 1. Refrigerator (safety-critical) — README §5.1
-- [ ] Data / rating label (make, model, 12 V / AC / gas ratings)
-- [ ] AC heating element at the back + **any transformer** wired to it
-- [ ] Exterior vents
+- [x] Data / rating label (make, model, 12 V / AC / gas ratings)
+- [x] Rear AC service bay + supply lead photographed (US-style plug/lead visible; no fixed transformer visible)
+- [x] Exterior vents
 
 ### 2. Gas / LPG system — README §4
 - [ ] Gas locker (open)
@@ -34,21 +37,21 @@ filled in and the item below ticked off.
 - [ ] Hose **date stamp**
 - [ ] Every isolation / shut-off valve (cooktop, fridge, Truma)
 - [ ] Appliance gas connections
-- [ ] CO / gas alarm
+- [x] CO / gas alarm (Safe-T-Alert 30-442 photographed)
 
 ### 3. Truma heating / hot water — README §5.2
-- [ ] Truma unit + its **data label** (Combi? water heater? S-series?)
+- [ ] Truma unit + its **data label** (unit photographed, label still needed)
 - [ ] Control panel **powered on** (to document buttons/dials + fault codes)
 - [ ] Flue / exhaust cowl outside
 - [ ] FrostControl / drain valve (if fitted)
 
 ### 4. Water system — README §3
 - [ ] Fresh tank + fill point + gauge
-- [ ] Water **pump (with label)**
+- [ ] Water **pump (with label)** (pump photographed, label unreadable)
 - [ ] Any accumulator / filter
 - [ ] Each tap
 - [ ] Water heater in/out
-- [ ] City-water inlet (+ EU pressure reducer?)
+- [x] City-water inlet (+ EU pressure reducer?)
 - [ ] All drain valves (for winterising)
 
 ### 5. Identification & remaining electrical
@@ -56,7 +59,7 @@ filled in and the item below ticked off.
 - [ ] Weight / spec sticker
 - [ ] Phocos controller side/back **label** (exact model & amp rating) — README §2.4
 - [ ] Converter **DC fuse map** (fuse ratings per circuit) — README §2.3
-- [ ] Battery label (type / capacity Ah) — README §2.5
+- [x] Battery label (type / capacity Ah) — README §2.5
 
 ### 6. Cooktop / stove — README §5.3
 - [ ] Make/model label
@@ -74,8 +77,8 @@ filled in and the item below ticked off.
 
 - [ ] §3 Water system — fill tables, add winterising drain-down checklist
 - [ ] §4 Gas system — pipe run + isolation valve map, finalise leak-test procedure
-- [ ] §5.1 Refrigerator — operating instructions per energy source
-- [ ] §5.2 Truma — control-panel guide, start/stop sequence, **fault-code reference**
+- [x] §5.1 Refrigerator — core section drafted with ratings + EU safety warning (refine operating detail as needed)
+- [x] §5.2 Truma — base section drafted with controller/alarm notes (still needs data label + fault-code detail)
 - [ ] §6 Roof / lift / canvas
 - [ ] §7 Interior & furniture
 - [ ] §8 Exterior & hardware
