@@ -1,0 +1,12 @@
+# HEIC originals are converted to JPG in images/ — don't track the originals
+*.HEIC
+*.heic
+
+# Photo import archives
+*.zip
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*~
+.vscode/
